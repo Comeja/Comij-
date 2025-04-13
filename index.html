@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComiJá - Home</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #F7F7F7;
+        }
+
+        /* Header */
+        header {
+            background-color: #D61A2A;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header .search-bar input {
+            padding: 10px;
+            border-radius: 25px;
+            border: none;
+            width: 200px;
+        }
+        header .search-bar button {
+            background-color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        /* Menu de Categorias */
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 60px; /* Para deixar espaço do header fixo */
+            background-color: white;
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .category-item {
+            text-align: center;
+            padding: 10px;
+        }
+        .category-item img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+        .category-item p {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        /* Grid de Restaurantes */
+        .restaurant-list {
+            margin-top: 20px;
+            padding: 0 10px;
+        }
+        .restaurant-card {
+            background-color: white;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 15px;
+        }
+        .restaurant-card img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+        .restaurant-info {
+            padding: 15px;
+            flex-grow: 1;
+        }
+        .restaurant-info h3 {
+            margin: 0;
+            color: #333;
+            font-size: 16px;
+        }
+        .restaurant-info p {
+            color: #666;
+            font-size: 14px;
+        }
+        .restaurant-info .rating {
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #D61A2A;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header com Logo e Barra de Pesquisa -->
+    <header>
+        <div class="logo">ComiJá</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar restaurantes...">
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <!-- Menu de Categorias -->
+    <div class="categories">
+        <div class="category-item">
+            <img src="https://via.placeholder.com/50" alt="Pizza">
+            <p>Pizza</p>
+        </div>
+        <div class="category-item">
+            <img src="https://via.placeholder.com/50" alt="Hambúrguer">
+            <p>Hambúrguer</p>
+        </div>
+        <div class="category-item">
+            <img src="https://via.placeholder.com/50" alt="Sushi">
+            <p>Sushi</p>
+        </div>
+        <div class="category-item">
+            <img src="https://via.placeholder.com/50" alt="Lanches">
+            <p>Lanches</p>
+        </div>
+    </div>
+
+    <!-- Lista de Restaurantes -->
+    <div class="restaurant-list">
+        <div class="restaurant-card">
+            <img src="https://via.placeholder.com/120" alt="Restaurante 1">
+            <div class="restaurant-info">
+                <h3>Pizzaria Delícia</h3>
+                <p>Pizza • Italiana • $$</p>
+                <p class="rating">⭐ 4.5 (200+)</p>
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <img src="https://via.placeholder.com/120" alt="Restaurante 2">
+            <div class="restaurant-info">
+                <h3>Sushi Master</h3>
+                <p>Japonesa • $$</p>
+                <p class="rating">⭐ 4.7 (150+)</p>
+            </div>
+        </div>
+        <div class="restaurant-card">
+            <img src="https://via.placeholder.com/120" alt="Restaurante 3">
+            <div class="restaurant-info">
+                <h3>Burger King</h3>
+                <p>Lanches • $</p>
+                <p class="rating">⭐ 4.2 (300+)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>ComiJá © 2025</p>
+    </footer>
+
+</body>
+</html>
